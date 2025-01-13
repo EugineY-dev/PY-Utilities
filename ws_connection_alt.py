@@ -6,7 +6,8 @@ def start_server():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     # Specify the IP address and port
-    host = '192.168.0.1'
+    # host = '192.168.0.1'
+    host = '192.168.0.101'
     port = 8080
 
     # Bind the socket to the IP address and port
