@@ -3,7 +3,8 @@ import base64
 import hashlib
 
 # WebSocket handshake constants
-websocket_url = "192.168.0.101"  # Replace with your server's IP
+# websocket_url = "192.168.0.101"  # Replace with your server's IP
+websocket_url = "192.168.0.100"  # Replace with your server's IP
 port = 61630
 path = "/ws/flexpay/client/v1/communication"
 key = base64.b64encode(b'websocket-key').decode('utf-8')  # Random unique key for handshake

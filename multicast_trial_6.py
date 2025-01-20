@@ -2,6 +2,8 @@ import socket
 import os
 import platform
 import re
+import struct
+
 
 def get_ethernet_ip():
     """Detects an Ethernet IP address on Windows using only the standard library."""

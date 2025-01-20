@@ -26,7 +26,8 @@ def on_open(ws):
     ws.send(json.dumps(request_message))
 
 # Set the WebSocket URL (replace IP with your server address)
-websocket_url = "ws://192.168.0.101:61630/ws/flexpay/client/v1/communication"
+# websocket_url = "ws://192.168.0.101:61630/ws/flexpay/client/v1/communication"
+websocket_url = "ws://192.168.0.100:61630/ws/flexpay/client/v1/communication"
 
 # Create and configure WebSocket connection
 ws = websocket.WebSocketApp(websocket_url,

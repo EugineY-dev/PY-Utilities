@@ -38,7 +38,9 @@ def register_device(ws):
         }
     }
     # Send the registration message as a JSON string
-    ws.send(json.dumps(register_message))
+    buf = json.dumps(register_message)
+    ws.send(buf)
+    print("Message sent: ", buf)
 
 def check_ticket_existence(ws):
     # Example function to send a ticket existence check request after registration

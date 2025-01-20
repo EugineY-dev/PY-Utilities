@@ -4,7 +4,8 @@ import hashlib
 import json
 
 # WebSocket configuration
-HOST = "192.168.0.101"
+# HOST = "192.168.0.101"
+HOST = "192.168.0.100"
 PORT = 61630
 RESOURCE = "/ws/flexpay/client/v1/communication"
 

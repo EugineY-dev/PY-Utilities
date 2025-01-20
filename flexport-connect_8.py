@@ -47,6 +47,7 @@ def register_device(ws):
 
 def generate_ticket(amount, pin):
     # REST API URL for generating a ticket
+    # api_url = "http://192.168.0.101:61630/test/createTicket"
     api_url = "http://192.168.0.101:61630/test/createTicket"
     params = {"amount": amount, "pin": pin}
 
@@ -73,7 +74,8 @@ def check_ticket_existence(ws, ticket_number):
     ws.send(json.dumps(request_message))
 
 # Set the WebSocket URL (replace with your server's IP address)
-websocket_url = "ws://192.168.0.101:61630/ws/flexpay/client/v1/communication"
+# websocket_url = "ws://192.168.0.101:61630/ws/flexpay/client/v1/communication"
+websocket_url = "ws://192.168.0.100:61630/ws/flexpay/client/v1/communication"
 
 # Create and configure the WebSocket connection
 ws = websocket.WebSocketApp(websocket_url,

@@ -3,7 +3,8 @@ import json
 import requests
 
 # REST API configuration
-REST_API_BASE_URL = "http://192.168.0.101:61630/test"
+# REST_API_BASE_URL = "http://192.168.0.101:61630/test"
+REST_API_BASE_URL = "http://192.168.0.100:61630/test"
 GENERATE_TICKET_URL = f"{REST_API_BASE_URL}/createTicket"
 CHECK_TICKET_STATE_URL = f"{REST_API_BASE_URL}/getTicketInfo"
 
@@ -89,7 +90,8 @@ if __name__ == "__main__":
         exit()
 
     # Proceed with WebSocket communication
-    websocket_url = "ws://192.168.0.101:61630/ws/flexpay/client/v1/communication"
+    # websocket_url = "ws://192.168.0.101:61630/ws/flexpay/client/v1/communication"
+    websocket_url = "ws://192.168.0.100:61630/ws/flexpay/client/v1/communication"
     ws = websocket.WebSocketApp(websocket_url,
                                 on_open=on_open,
                                 on_message=on_message,
